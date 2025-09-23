@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE company SYSTEM "../buoi2/dtd/nhansu.dtd">
+<company>
+    <department name="Kỹ thuật phần mềm">
+        <employee id="E001">
+            <name>Nguyễn Hoàng Thanh</name>
+            <position>Trưởng nhóm phát triển</position>
+        </employee>
+        <employee id="E002">
+            <name>Trần Văn Minh</name>
+            <position>Lập trình viên Backend</position>
+        </employee>
+    </department>
+
+    <department name="Nhân sự">
+        <employee id="E003">
+            <name>Nguyễn Thị Hoa</name>
+            <position>Trưởng phòng nhân sự</position>
+        </employee>
+        <employee id="E004">
+            <name>Lê Văn Hoàng</name>
+            <position>Chuyên viên tuyển dụng</position>
+        </employee>
+    </department>
+</company>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sinhviens SYSTEM "sinhvien.dtd">
+<sinhviens>
+  <sinhvien id="SV001">
+    <hoten>Nguyễn Hoàng Thanh</hoten>
+    <ngaysinh>2004-08-10</ngaysinh>
+    <chuyennganh>Kỹ thuật phần mềm</chuyennganh>
+  </sinhvien>
+
+  <sinhvien id="SV002">
+    <hoten>Trần Thị Thảo</hoten>
+    <ngaysinh>2004-11-22</ngaysinh>
+    <chuyennganh>Hệ thống Thông tin</chuyennganh>
+  </sinhvien>
+</sinhviens>

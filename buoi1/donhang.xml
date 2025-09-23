@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE orders SYSTEM "../buoi2/dtd/donhang.dtd">
+<orders>
+    <order id="O001" customer="Nguyễn Hoàng Thanh" date="2025-09-16">
+        <item id="P001" quantity="2" price="5000000" currency="VND">
+            <name>Điện thoại Samsung Galaxy S24</name>
+        </item>
+        <item id="P002" quantity="1" price="18000000" currency="VND">
+            <name>Laptop Dell XPS 13</name>
+        </item>
+    </order>
+
+    <order id="O002" customer="Trần Thị Mai" date="2025-09-15">
+        <item id="P003" quantity="3" price="350000" currency="VND">
+            <name>Tai nghe Bluetooth</name>
+        </item>
+        <item id="P004" quantity="2" price="2500000" currency="VND">
+            <name>Màn hình LG 24 inch</name>
+        </item>
+        <item id="P005" quantity="1" price="12000000" currency="VND">
+            <name>MacBook Air M2</name>
+        </item>
+    </order>
+</orders>
