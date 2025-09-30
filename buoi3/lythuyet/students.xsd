@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- Định nghĩa phần tử student với @id là xs:ID (primary key toàn cục) -->
+  <xs:element name="student">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="name" type="xs:string"/>
+        <xs:element name="email" type="xs:string"/>
+        <xs:element name="phone" type="xs:string"/>
+        <xs:element name="major" type="xs:string"/>
+        <xs:element name="birthDate" type="xs:date"/>
+      </xs:sequence>
+      <xs:attribute name="id" type="xs:ID" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Định nghĩa phần tử gốc students với xs:unique constraint -->
+  <xs:element name="students">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="student" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Định nghĩa xs:unique constraint cho email (unique cục bộ) -->
+    <xs:unique name="uniqueEmail">
+      <xs:selector xpath="student"/>
+      <xs:field xpath="@email"/>
+    </xs:unique>
+  </xs:element>
+
+</xs:schema>

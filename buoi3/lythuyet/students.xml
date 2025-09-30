@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+          xsi:noNamespaceSchemaLocation="students.xsd">
+
+  <!-- Student 1 với email duy nhất -->
+  <student id="S001">
+    <name>Nguyễn Hoàng Thanh</name>
+    <email>nhthanhktpm2211018@student.ctuet.edu.vn</email>
+    <phone>0123456789</phone>
+    <major>Kỹ thuật phần mềm</major>
+    <birthDate>2004-08-10</birthDate>
+  </student>
+
+  <!-- Student 2 với email duy nhất -->
+  <student id="S002">
+    <name>Trần Thị Thảo</name>
+    <email>thao.tran@student.ctuet.edu.vn</email>
+    <phone>0987654321</phone>
+    <major>Hệ thống Thông tin</major>
+    <birthDate>2004-11-22</birthDate>
+  </student>
+
+  <!-- Student 3 với email duy nhất -->
+  <student id="S003">
+    <name>Lê Văn Hoàng</name>
+    <email>hoang.le@student.ctuet.edu.vn</email>
+    <phone>0369258147</phone>
+    <major>Kỹ thuật phần mềm</major>
+    <birthDate>2004-03-15</birthDate>
+  </student>
+
+  <!-- Student 4 với email duy nhất -->
+  <student id="S004">
+    <name>Phạm Ngọc Thảo</name>
+    <email>thao.pham@student.ctuet.edu.vn</email>
+    <phone>0741852963</phone>
+    <major>Thiết kế UI/UX</major>
+    <birthDate>2004-07-08</birthDate>
+  </student>
+
+  <!-- Student 5 với email duy nhất -->
+  <student id="S005">
+    <name>Võ Quốc Minh</name>
+    <email>minh.vo@student.ctuet.edu.vn</email>
+    <phone>0527419638</phone>
+    <major>Kỹ thuật phần mềm</major>
+    <birthDate>2004-12-01</birthDate>
+  </student>
+
+  <!-- 
+  Ghi chú: Thay email trùng sẽ vi phạm xs:unique constraint.
+  Ví dụ: Nếu thay email của student S002 thành "nhthanhktpm2211018@student.ctuet.edu.vn" 
+  thì sẽ báo lỗi validation vì email phải unique trong toàn bộ tài liệu.
+  -->
+
+</students>

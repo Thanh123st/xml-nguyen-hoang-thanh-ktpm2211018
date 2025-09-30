@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sinhviens SYSTEM "sinhvien.dtd">
-<sinhviens>
+<sinhviens xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:noNamespaceSchemaLocation="../buoi3/sinhvien.xsd">
   <sinhvien id="SV001">
     <hoten>Nguyễn Hoàng Thanh</hoten>
     <ngaysinh>2004-08-10</ngaysinh>
@@ -11,5 +11,17 @@
     <hoten>Trần Thị Thảo</hoten>
     <ngaysinh>2004-11-22</ngaysinh>
     <chuyennganh>Hệ thống Thông tin</chuyennganh>
+  </sinhvien>
+
+  <sinhvien id="SV003">
+    <hoten>Lê Văn Hoàng</hoten>
+    <ngaysinh>2004-03-15</ngaysinh>
+    <chuyennganh>Kỹ thuật phần mềm</chuyennganh>
+  </sinhvien>
+
+  <sinhvien id="SV004">
+    <hoten>Phạm Ngọc Thảo</hoten>
+    <ngaysinh>2004-07-08</ngaysinh>
+    <chuyennganh>Thiết kế UI/UX</chuyennganh>
   </sinhvien>
 </sinhviens>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<school xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="student_unique.xsd">
+
+  <student>
+    <id>SV01</id>
+    <name>Nguyễn Hoàng Thanh</name>
+    <date>2004-08-10</date>
+  </student>
+
+  <student>
+    <id>SV03</id>
+    <name>Trần Thị Thảo</name>
+    <date>1998-01-21</date>
+  </student>
+
+  <student>
+    <id>SV03x</id>
+    <name>Lê Văn Hoàng</name>
+    <date>1997-11-11</date>
+  </student>
+
+</school>

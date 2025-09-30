@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE thuvien SYSTEM "thuvien.dtd">
-<thuvien>
+<thuvien xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="../buoi3/thuvien.xsd">
   <sach id="S001">
     <title>Lập Trình Python Cơ Bản</title>
     <author>Phúc Trọng</author>
@@ -20,5 +20,19 @@
     <author>Nguyễn Long</author>
     <year>2020</year>
     <genre>Kỹ thuật phần mềm</genre>
+  </sach>
+
+  <sach id="S004">
+    <title>Lập Trình Web với React</title>
+    <author>Trần Minh</author>
+    <year>2023</year>
+    <genre>Lập trình</genre>
+  </sach>
+
+  <sach id="S005">
+    <title>Thiết Kế UI/UX</title>
+    <author>Lê Thảo</author>
+    <year>2021</year>
+    <genre>Thiết kế</genre>
   </sach>
 </thuvien>

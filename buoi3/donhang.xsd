@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- STT: ... | Họ và tên: ... | Nhóm: ... -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           elementFormDefault="qualified">
+
+  <!-- ========== ROOT ========== -->
+  <xs:element name="orders">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="order" type="orderType" maxOccurs="unbounded"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- ========== ORDER ========== -->
+  <xs:complexType name="orderType">
+    <xs:sequence>
+      <xs:element name="product" type="productType" maxOccurs="unbounded"/>
+    </xs:sequence>
+    <!-- id của order là xs:ID → duy nhất TOÀN TÀI LIỆU -->
+    <xs:attribute name="id" type="xs:ID" use="required"/>
+  </xs:complexType>
+
+  <!-- Ràng buộc: trong MỖI order, product/@id phải duy nhất -->
+  <!-- Đặt xs:unique ở NGAY TRONG phạm vi của order -->
+  <xs:element name="order" type="orderType">
+    <xs:unique name="UniqueProductIdPerOrder">
+      <xs:selector xpath="product"/>
+      <xs:field xpath="@id"/>
+    </xs:unique>
+  </xs:element>
+
+  <!-- ========== PRODUCT ========== -->
+  <xs:complexType name="productType">
+    <xs:sequence>
+      <xs:element name="name"     type="xs:string"/>
+      <xs:element name="quantity" type="xs:integer"/>
+    </xs:sequence>
+    <!-- KHÔNG dùng xs:ID cho product vì ta chỉ muốn duy nhất TRONG ORDER -->
+    <xs:attribute name="id" type="xs:string" use="required"/>
+  </xs:complexType>
+
+</xs:schema>
