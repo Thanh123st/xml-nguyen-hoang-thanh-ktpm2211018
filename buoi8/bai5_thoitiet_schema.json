@@ -1,0 +1,36 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "DuLieuThoiTiet",
+    "type": "object",
+    "properties": {
+        "thanh_pho": {
+            "type": "string"
+        },
+        "quoc_gia": {
+            "type": "string"
+        },
+        "nhiet_do": {
+            "type": "number"
+        },
+        "do_am": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+        },
+        "toc_do_gio": {
+            "type": "number",
+            "minimum": 0
+        },
+        "mo_ta": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "thanh_pho",
+        "quoc_gia",
+        "nhiet_do",
+        "do_am",
+        "toc_do_gio",
+        "mo_ta"
+    ]
+}

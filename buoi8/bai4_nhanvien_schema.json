@@ -1,0 +1,45 @@
+{
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "title": "DanhSachNhanVien",
+    "type": "object",
+    "properties": {
+        "nhan_vien": {
+            "type": "array",
+            "items": {
+                "type": "object",
+                "properties": {
+                    "id": {
+                        "type": "string"
+                    },
+                    "ho_ten": {
+                        "type": "string"
+                    },
+                    "chuc_vu": {
+                        "type": "string"
+                    },
+                    "luong": {
+                        "type": "number",
+                        "minimum": 0
+                    },
+                    "trang_thai": {
+                        "type": "string",
+                        "enum": [
+                            "Đang làm",
+                            "Nghỉ việc"
+                        ]
+                    }
+                },
+                "required": [
+                    "id",
+                    "ho_ten",
+                    "chuc_vu",
+                    "luong",
+                    "trang_thai"
+                ]
+            }
+        }
+    },
+    "required": [
+        "nhan_vien"
+    ]
+}
